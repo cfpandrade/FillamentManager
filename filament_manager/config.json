@@ -20,5 +20,5 @@
   "panel_title": "Filament Manager",
   "documentation": "https://github.com/cfpandrade/FillamentManager/blob/main/README.md",
   "rating": "4",
-  "stage": "stable"
+  "stage": "experimental"
 }
