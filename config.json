@@ -2,7 +2,7 @@
   "name": "Filament Manager",
   "version": "1.0",
   "slug": "filament_manager",
-  "description": "Manage 3D printer filament inventory in Home Assistant",
+  "description": "Addon for managing 3D printer filament inventory in Home Assistant.",
   "arch": ["amd64", "armv7", "arm64"],
   "startup": "application",
   "boot": "auto",
@@ -10,10 +10,7 @@
     "5000/tcp": 5000
   },
   "map": ["config", "share", "ssl"],
-  "options": {
-    "database": "/data/filament_inventory.db"
-  },
-  "schema": {
-    "database": "str"
-  }
+  "options": {},
+  "schema": {},
+  "image": "ghcr.io/cfpandrade/filament_manager:1.0"
 }
