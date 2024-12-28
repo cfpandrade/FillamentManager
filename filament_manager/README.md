@@ -1,22 +1,22 @@
-# Home Assistant Filament Manager
+# Filament Manager
 
-Addon for Home Assistant to manage 3D printer filament inventory.
+Manage your 3D printer filament inventory with this Home Assistant add-on.
 
 ## Features
-- API to add, update, and list filaments.
-- Persistent storage using SQLite.
+- Add, update, and list filaments.
+- Persistent SQLite database.
 - Integration with Home Assistant via REST sensors.
 
-## Usage
-1. Place the addon in the `/addons/local/filament_manager` directory of Home Assistant.
-2. Install and start the addon from the Supervisor interface.
-3. Use the API endpoints to manage filaments.
+## Installation
+1. Add the repository to Home Assistant Add-on Store.
+2. Install the Filament Manager add-on.
+3. Start the add-on and configure your REST sensors in Home Assistant.
 
 ## API Endpoints
 - `GET /filamentos`: List all filaments.
 - `POST /filamentos`: Add a new filament.
 
-## Docker Build Instructions
-```bash
-docker build -t filament_manager .
-docker run -p 5000:5000 -v $(pwd)/data:/data filament_manager
+## Configuration
+No additional configuration is required.
+
+![Screenshot](images/filamentmanager.png)
