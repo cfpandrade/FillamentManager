@@ -1,0 +1,130 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffffcc;
+    border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+/* Main container styles */
+.main-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Action buttons */
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin: 0 5px;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+/* Output container styles */
+.output-container {
+    display: flex; /* Layout horizontal */
+    flex-wrap: wrap; /* Permitir saltos a nuevas filas si no cabe horizontalmente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    justify-content: center; /* Centrar las tarjetas */
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+/* Individual card styles */
+.filament-card {
+    width: calc(25% - 20px); /* 25% del ancho del contenedor menos el espacio del gap */
+    min-width: 200px; /* Ancho mínimo para evitar tarjetas demasiado pequeñas */
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.filament-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.filament-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.filament-card small {
+    color: #7f8c8d;
+}
+
+/* Form container styles */
+.form-container {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#filament-form input, #filament-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34495e;
+    color: #fff;
+}

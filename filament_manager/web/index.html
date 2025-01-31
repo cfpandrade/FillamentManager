@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filament Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1>Filament Manager</h1>
+    <p>Manage your 3D printing filaments with ease!</p>
+  </header>
+  <main class="main-container">
+    <section class="actions">
+      <button class="btn-primary" onclick="fetchData()">🎛️ Fetch Filament Data</button>
+      <button class="btn-primary" onclick="showAddForm()">➕ Add Filament</button>
+    </section>
+    <section id="form-section" class="form-container" style="display:none;">
+      <h2 id="form-title">Add/Edit Filament</h2>
+      <form id="filament-form" onsubmit="handleSubmit(event)">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="marca" placeholder="Marca" required />
+        <input type="text" id="color" placeholder="Color" required />
+        <select id="tipo" required>
+          <option value="" disabled selected>Seleccione un tipo</option>
+          <option value="PLA">PLA</option>
+          <option value="ABS">ABS</option>
+          <option value="PETG">PETG</option>
+          <option value="TPU">TPU</option>
+        </select>
+        <input type="number" id="peso_total" placeholder="Peso Total (g)" required />
+        <input type="number" id="cantidad" placeholder="Cantidad (número de rollos)" required />
+        <input type="hidden" id="id" />
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </section>
+    <section id="output" class="output-container"></section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 Filament Manager | All rights reserved</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

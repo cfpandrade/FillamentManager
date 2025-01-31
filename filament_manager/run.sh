@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS filamentos (
     peso_total REAL NOT NULL,
     peso_restante REAL NOT NULL,
     marca TEXT,
+    cantidad INTEGER,
     ultima_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 EOF
